@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "opencv-tests"
+version = "0.1.0"
+description = ""
+authors = ["Jean-Francois Labonte <grimsleepless@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "opencv_tests"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.6.0.66"
+keras = "^2.11.0"
+scikit-image = "^0.19.3"
+imread = "^0.7.4"
+matplotlib = "^3.6.2"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
